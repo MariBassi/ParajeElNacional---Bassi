@@ -71,15 +71,6 @@ header {
     font-weight: 300;
 }
 
-@media screen and (min-width:720px) {    
-    .menu_item.active a,
-    .menu_item a:hover {
-        text-decoration: none;
-        color: #05020199;
-        font-weight: 500;
-    }
-}
-
 .principal {
     width: 100%;
     background-image: url(../imagenes/background3.jpg);
@@ -199,11 +190,6 @@ header {
     margin-top: 5px;
 }
 
-.boton:hover {
-    background-color: #bf6b16;
-    cursor: pointer;
-}
-
 .seccion__historia {
     height: 100vh;
     width: 100vw;
@@ -260,6 +246,7 @@ footer {
     width: 100%;
     justify-content: center;
     align-content: center;
+    bottom: 0;
 }
 
 .redes {
@@ -497,6 +484,19 @@ main {
     color: #ba7d40;  
 }
 
+@media screen and (min-width:720px) {    
+    .menu_item.active a,
+    .menu_item a:hover {
+        text-decoration: none;
+        color: #05020199;
+        font-weight: 500;
+    }
+    .boton:hover {
+        background-color: #bf6b16;
+        cursor: pointer;
+    }
+}
+
 @media screen and (max-width: 480px) { 
 
    .btn__label {
@@ -516,14 +516,19 @@ main {
         position: absolute;
         right: 0;
         top: 70px;
-        width: 40vw;
+        width: 50vw;
         margin-right: -70%;
         transition: all 0.75s;
+        justify-content: center; 
    }
 
    #btn__menu:checked ~ .menu {
         margin-right: 0;
    }
+
+   #btn__menu:not(:checked) ~ .menu {
+        display: none;
+}
 
    .principal {
     height: 60vh;
@@ -546,12 +551,23 @@ main {
 
    .historia {
     flex-direction: column;
-    padding-top: 20px;
-    gap: 30px;
+    padding-top: 15px;
+    /* gap: 30px; */
+   }
+
+   .historia__parrafo, .historia__izquierdo h4 {
+        font-size: 15px;
+        line-height: 30px;
+        padding-top: 10px;
    }
 
    .historia__derecho, .historia__izquierdo {
         flex: 1;
+        max-width: 80vw;
+
+   }
+   .historia__imagen {
+        max-width: 100%;
    }
 
    main {
@@ -577,7 +593,7 @@ main {
     width: 100vw;
    }
    .titulo__paraje h2 {
-    font-size: 70px;
+    font-size: 60px;
     padding-top: 0;
    }
 
