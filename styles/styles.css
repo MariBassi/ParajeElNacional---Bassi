@@ -226,10 +226,11 @@ header {
 
 .seccion__historia {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 5rem;
 }
 
 .historia {
@@ -245,7 +246,7 @@ header {
 .historia__izquierdo {
     font-size: 20px;
     flex: 1;
-    padding-inline: 20px;
+    padding-inline: 3vw;
 }
 
 .historia__izquierdo h4 {
@@ -280,6 +281,7 @@ footer {
     width: 100%;
     justify-content: center;
     align-content: center;
+    position: relative;
     bottom: 0;
 }
 
@@ -430,7 +432,7 @@ footer {
 
 main {
     display: flex;
-    height: calc(100vh-160px);
+    height: 100vh;
     width: 100%;
 }
 
@@ -521,12 +523,13 @@ main {
     background-color: #bf6b16;
 }
 
-.datos__parajeh3, .datos__parajeh4 {
+.datos__paraje h3, .datos__paraje h4 {
     margin-bottom: 20px;  
 }
 
 .datos__paraje h3 {
-    color: #ba7d40;  
+    color: #ba7d40;
+    font-size: 1.5rem; 
 }
 
 @media screen and (min-width:720px) {    
