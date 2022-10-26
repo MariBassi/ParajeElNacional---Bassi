@@ -84,11 +84,40 @@ header {
     align-items: center;
 }
 
-.titulo__header {
+.principal .titulo__header {
 	color: #bf6b16;
-    font-size: 30px;
+    font-size: 40px;
     padding-inline: 5px;
+    -webkit-animation: appear;
+    animation: appear;
+    animation-duration: 2s;
+    animation-direction:normal;
+    animation-iteration-count: 1;
 }
+
+@keyframes appear {
+    0%{
+        opacity:0;
+    }
+    25%{
+        opacity:0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-webkit-keyframes appear {
+    0%{
+        opacity:0;
+    }
+    25%{
+        opacity:0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 
 .parrafo__header { 
     color: #bf6b16;
@@ -96,6 +125,11 @@ header {
     font-size: 20px;  
     padding-inline: 20%;
     padding-top: 30px;
+    -webkit-animation: appear;
+    animation: appear;
+    animation-duration: 4s;
+    animation-direction:normal;
+    animation-iteration-count: 1;
 }
 
 /*productos*/
@@ -276,13 +310,14 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center center;
     padding: 20px;
 }
 
+.titulo__paraje {
+    text-align: center;
+}
+
 .titulo__paraje h2 {
-    display: flex;
-    justify-content: center;
     font-family: 'Teko', sans-serif;
     font-weight: 300;
     font-size: 100px;
@@ -296,15 +331,13 @@ footer {
     font-size: 150px;
     color: #F98A0C;
     text-shadow: 5px 5px 10px #865e35;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .separador {
     background-color: #F98A0C;
-    padding: 5px;
-    width: 30vw;
+    padding: 2%;
+    width: 40vw;
+    height: 3vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -314,7 +347,7 @@ footer {
     color: white;
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 2vw;
     text-transform: uppercase;
     letter-spacing: 10px;
 }
@@ -322,27 +355,39 @@ footer {
 .menuparaje {
     display: flex;
     color: #bf6b16;
-    width: 100%;
-    gap: 5rem;
+    width: 40vw;
+    height: 100%;
     justify-content: center;
+    align-items: center;
 }
 
 .listado {
     padding-block: 30px;
-    justify-content: center;   
-    line-height: 55px;
     text-transform: uppercase;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
 }
 
-.listado__precio ul {
+.listado__precio {
     padding-block: 30px;
-    list-style-type: none;
-    justify-content: center;
-    line-height: 55px;    
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.listado ul {
+.menuparaje ul {
     list-style-type: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.menuparaje li {
+    padding-block: 1rem;
 }
 
 /*servicios*/
@@ -468,7 +513,7 @@ main {
     padding: 10px;
     background-color: #ba7d40;
     border: 0;
-    width: 150px;
+    width: 160px;
 }
 
 .button:hover,
@@ -590,16 +635,34 @@ main {
    }
 
    .separador {
-    width: 100vw;
+        padding: 2%;
+        height: 5vh;
+        width: 100vw;
    }
+
+   .separador__titulo {
+        font-size: 4vw;
+   }
+
    .titulo__paraje h2 {
-    font-size: 60px;
-    padding-top: 0;
+        font-size: 60px;
+        padding-top: 0;
    }
 
    .contenedor {
-    width: 100vw;
+        width: 100vw;
    }
 
+   .menuparaje{
+    width: 90vw;
+   }
+
+   .listado {
+    width: 70%;
+   }
+
+   .listado__precio {
+    width: 30%;
+   }
 
 }
