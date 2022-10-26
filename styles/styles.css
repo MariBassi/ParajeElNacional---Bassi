@@ -426,10 +426,10 @@ footer {
 
 /*formulario*/
 
-main {
+.main__formulario {
     display: flex;
     height: 100vh;
-    width: 100%;
+ 
 }
 
 .titulo__contacto {
@@ -446,6 +446,7 @@ main {
 }
 
 .formulario {
+   width: 50%;
    height: 100%;
    flex: 1;
    margin-block: 35px;
@@ -617,6 +618,11 @@ main {
         flex-direction: column;
    }
     /*formulario*/
+
+    .main__formulario {
+        height: auto;
+    }
+    
    .form__contacto {
         display: flex;
         flex-direction: column;
