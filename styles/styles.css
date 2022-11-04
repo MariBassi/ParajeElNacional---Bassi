@@ -133,7 +133,7 @@ header {
 }
 
 /*productos*/
-/*prueba titulos*/
+
 
 .eventos__titulo { 
     display: block;
@@ -214,9 +214,11 @@ header {
     padding-bottom: 5px;
 }
 
-.boton {
+.evento1 a, .evento2 a, .evento3 a, .evento4 a {
     border-radius: 5px;
     border: none;
+    color: #000000;
+    text-decoration: none;
     background-color: #ba7d40;
     padding: 10px;
     margin-top: 5px;
@@ -266,7 +268,7 @@ header {
     transition-timing-function: ease-in-out;
 }
 
-/*footer*/
+/*//// footer /////*/
 
 footer {
     width: 100%;
@@ -288,7 +290,7 @@ footer {
     color: #ffffff;
 }
 
-/*nuestros-platos*/
+/*////nuestros-platos /////*/
 
 .main__menu {
     width: 100%;
@@ -388,7 +390,7 @@ footer {
     padding-block: 1rem;
 }
 
-/*servicios*/
+/* ////servicios///// */
 
 .servicios h2 {
     width: 100%;
@@ -402,29 +404,201 @@ footer {
     text-transform: uppercase;
     color: #ffffff;
 }
-/*quienes-somos*/
+
+.servicios {
+    height: 80px;
+}
+
+.seccion__servicios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    width: 100%;
+    flex-direction: column;
+}
+
+.primeros, .segundos {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-evenly;   
+}
+
+.servicio {
+    width: 25vw;
+    height: 90vh;
+    background-color: #bf6b16;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.servicio {
+    transition: all 1s;
+}
+
+.servicio:hover {
+    transform: scale(1.1) translateY(-20px);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.info {
+    padding: 10px 20px 20px 20px;
+    line-height: .95cm;
+    color: #000000;  
+}
+
+.info h4 {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.info a {
+    color: #000000;
+    background-color: #ba7d40;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.info a:hover {
+    background-color: #885b2f;
+}
+
+.servicio img {
+    width: 100%;   
+}
+
+/* //// quienes-somos ////*/
+
+.main__quienessomos {
+    width: 100%;
+    height: auto;
+}
 
 .quienes__somos {
     width: 100%;
-}
-.quienes__somos h2 {
-    width: 100%;
     display: flex;
     justify-content: center;
-    background-color: #ba7d40;
+    align-items: center;
     height: 60px;
+    background-color: #ba7d40;
+}
+
+.quienes__somos h2 {
     font-size: 35px;
-    text-align: center;
     padding: 10px;
     text-transform: uppercase;
     color: #ffffff;
 }
 
-.quienes__somos p {
-    align-items: left;
+.seccion__quienessomos {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;  
+    padding-bottom: 50px;
 }
 
-/*formulario*/
+.div__izq1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-inline: 3rem;
+    -webkit-animation: fade-in-fwd 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-fwd 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    
+}
+
+.div__izq1 p {
+    font-size: 1.2vw;
+    line-height: 5vh;
+}
+.div__izq1 h3 {
+    font-size: 1.4vw;
+    color: #ba7d40;
+    padding-bottom: 20px;
+}
+
+.div__der1 {
+    flex: 1;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    padding-inline: 4rem;
+
+}
+
+.nh__imagen {
+    height: 60vh;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+@-webkit-keyframes fade-in-fwd {
+    0% {
+      -webkit-transform: translateZ(-80px);
+              transform: translateZ(-80px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-fwd {
+    0% {
+      -webkit-transform: translateZ(-80px);
+              transform: translateZ(-80px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+
+.seccion__nuestrahistoria {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    margin-bottom: 5vh;
+}
+
+.div__izq2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.qs__imagen {
+    height: 80vh;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.div__der2 {
+    flex: 1;
+    padding-inline: 2rem;
+}
+
+.div__der2 p {
+    line-height: 1cm;
+    font-size: 1.2vw;
+}
+
+.div__der2 h3 {
+    color: #ba7d40;
+    font-size: 1.4vw;
+    padding-bottom: 20px;
+}
+
+/*//// formulario ////*/
 
 .main__formulario {
     display: flex;
@@ -529,6 +703,10 @@ footer {
     font-size: 1.5rem; 
 }
 
+
+/* //// MEDIA QUERIES //// */
+
+
 @media screen and (min-width:720px) {    
     .menu_item.active a,
     .menu_item a:hover {
@@ -543,7 +721,7 @@ footer {
 }
 
 @media screen and (max-width: 480px) { 
-
+    /*index*/
    .btn__label {
         display: block;
    }
@@ -565,6 +743,7 @@ footer {
         margin-right: -70%;
         transition: all 0.75s;
         justify-content: center; 
+        z-index: 1;
    }
 
    #btn__menu:checked ~ .menu {
@@ -669,4 +848,84 @@ footer {
     width: 30%;
    }
 
+   /*servicios*/
+
+   .seccion__servicios {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 20px;
+   }
+
+   .primeros,
+   .segundos {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    height: 280vh;
+   }
+
+   .servicio {
+    width: 80vw;
+   }
+ 
+   /*quienes-somos*/
+
+   .main__quienessomos {
+    flex-direction: column;
+   }
+
+   .seccion__quienessomos {
+    flex-direction: column;
+    height: 160vh;
+    padding-bottom: 50px;
+   }
+
+   .div__izq1 {
+    width: 90%;
+    height: 100vh;
+   }
+
+   .div__izq1 h3,
+   .div__der2 h3 {
+    font-size: 20px;
+   }
+
+   .div__izq1 p,
+   .div__der2 p {
+    font-size: 18px;
+   }
+
+   .div__der1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-inline: 0;
+   }
+
+   .nh__imagen {
+    width: 100%;
+   }
+
+   .seccion__nuestrahistoria {
+    flex-direction: column;
+    height: 220vh;
+    margin-top: 5vh;
+    }
+
+   .div__der2 {
+    order: -1;
+    height: 140vh;
+   }
+
+   .div__izq2 {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 50vh;
+    padding-top: 40px;
+   }
+
+   .qs__imagen {
+    width: 100%;
+   }
 }
